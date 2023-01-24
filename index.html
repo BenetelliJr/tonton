@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,65 +8,82 @@
     <title>Tonton Personalizados</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="pagina">
     <header>
+        <img src="toton.png" alt="Tonton Personalizados" id="tonton">
         <h1>Tonton Personalizados</h1>
-        <img src="toton.png" alt="Tonton Personalizados">
-      </header>
-   <div class="table-responsive">
-    <table class="tabelaPreços">
-        <thead>
-            <tr class="aaas"> 
-                <th scope="col">Trabalhos</th>
-                <th scope="col">Valor</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="">
-                <td scope="row">Topo de Bolo</td>
-                <td>R$25,00</td>
-            </tr>
-            <tr class="">
-                <td scope="row">Caixas Personalizadas</td>
-                <td>R$8,00</td>
-            </tr>
-            <tr class="">
-                <td scope="row">Etiquetas Escolares</td>
-                <td>R$1,00</td>
-            </tr>
-            <tr class="">
-                <td scope="row">Tubetes Personalidados</td>
-                <td>R$3,00</td>
-            </tr>
-        </tbody>
-    </table><br><br>
-   </div>
-   <form id="form" onsubmit="onSubmit(); return false">
+    </header><br><br>
     <div>
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name"/>
+        <p>Nossos trabalhos:</p>
+        <div id="imagens">
+            <img src="caixinha2.jpeg" alt="Caixinha Personalizada">
+            <p>Caixinha Personalizadas</p>
+            <img src="cone.jpeg" alt="Cone" id="cone">
+            <p>Cone para enfeitar festas</p>
+            <img src="convite.jpeg" alt="Convite" id="convite">
+            <p>Convites</p>
+            <img src="kit.jpeg" alt="Kit" id="kit">
+            <p>Kit Lembrancinhas</p>
+            <img src="cartao.jpeg" alt="Cartão" id="cartao">
+            <p>Cartão de Visitas</p>
+        </div>
     </div>
-    <div>
-        <label for="mail">E-mail:</label>
-        <input type="email" id="mail" name="email"/>
+    <div class="table-responsive">
+        <table class="tabelaPreços">
+            <thead>
+                <tr class="aaas">
+                    <th scope="col">Trabalhos</th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td scope="row">Topo de Bolo</td>
+                    <td>R$25,00</td>
+                </tr>
+                <tr class="">
+                    <td scope="row">Caixas Personalizadas</td>
+                    <td>R$8,00</td>
+                </tr>
+                <tr class="">
+                    <td scope="row">Etiquetas Escolares</td>
+                    <td>R$1,00</td>
+                </tr>
+                <tr class="">
+                    <td scope="row">Tubetes Personalidados</td>
+                    <td>R$3,00</td>
+                </tr>
+            </tbody>
+        </table><br><br>
     </div>
-    <div>
-        <label for="celular">Celular:</label>
-        <input type="number" id="celular" />
-    </div>
-    <div>
-        <label for="topodeBolo">Topo de Bolo:</label>
-        <input type="checkbox" id="topodeBolo" />
-    </div>
-    <div>
-        <label for="msg">Mensagem:</label>
-        <textarea id="msg"></textarea>
-    </div>
-    <div class="button">
-        <button>Enviar sua mensagem</button>
-    </div>
-</form>
+    <form id="form" onsubmit="onSubmit(); return false">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="email" />
+        </div>
+        <div>
+            <label for="celular">Celular:</label>
+            <input type="number" id="celular" />
+        </div>
+        <div>
+            <label for="topodeBolo">Topo de Bolo:</label>
+            <input type="checkbox" id="topodeBolo" />
+        </div>
+        <div>
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg"></textarea>
+        </div>
+        <div class="button">
+            <button>Enviar sua mensagem</button>
+        </div>
+    </form>
 
-<script src="./scritpt.js"></script>
+    <script src="./scritpt.js"></script>
 </body>
+
 </html>
