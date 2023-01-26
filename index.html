@@ -11,93 +11,53 @@
 
 <body id="pagina">
     <header>
-        <img src="toton.png" alt="Tonton Personalizados" id="tonton">
+        <img src="./assets/icons/toton.png" alt="Tonton Personalizados" id="tonton">
         <h1>Tonton Personalizados</h1>
     </header><br><br>
-    <p>Nossos trabalhos:</p>
-    <div class="container">
-        <img src="topo.jpeg" alt="Topo" class="imagens">
-        <p>Caixinha Personalizadas</p>
-        <img src="caixinha2.jpeg" alt="Caixinha Personalizada" class="imagens">
-        <p>Caixinha Personalizadas</p>
-        <img src="cone.jpeg" alt="Cone" class="imagens">
-        <p>Cone para enfeitar festas</p>
-        <img src="convite.jpeg" alt="Convite" class="imagens">
-        <p>Convites</p>
-        <img src="kit.jpeg" alt="Kit" class="imagens">
-        <p>Kit Lembrancinhas</p>
-        <img src="cartao.jpeg" alt="Cartão" class="imagens">
-        <p>Cartão de Visitas</p>
-        <img src="tubete.jpeg" alt="Tubetes" class="imagens">
-        <p>Caixinha Personalizadas</p>
-    </div>
-    <div class="table-responsive">
-        <table class="tabelaPreços">
-            <thead>
-                <tr class="aaas">
-                    <th scope="col">Trabalhos</th>
-                    <th scope="col">Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="">
-                    <td scope="row">Topo de Bolo</td>
-                    <td>R$25,00</td>
-                </tr>
-                <tr class="">
-                    <td scope="row">Caixas Personalizadas</td>
-                    <td>R$8,00</td>
-                </tr>
-                <tr class="">
-                    <td scope="row">Etiquetas Escolares</td>
-                    <td>R$1,00</td>
-                </tr>
-                <tr class="">
-                    <td scope="row">Tubetes Personalidados</td>
-                    <td>R$3,00</td>
-                </tr>
-            </tbody>
-        </table><br><br>
-    </div>
-    <form id="form" onsubmit="onSubmit(); return false">
-        <div>
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" />
+    <h2>Nossos trabalhos:</h2>
+
+    <section>
+        <p class="products">Selecione um dos nosso produtos abaixo para realizar um pedido</p>
+    </section>
+
+
+    <section class="container">
+        <div onclick="onSelectProduct(this)">
+            <img src="./assets/photos/topo.jpeg" alt="Topo" class="imagens">
+            <p>Caixinha Personalizadas</p>
         </div>
-        <div>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="email" />
+
+        <div onclick="onSelectProduct(this)">
+            <img src="./assets/photos/caixinha2.jpeg" alt="Caixinha Personalizada" class="imagens">
+            <p>Caixinha Personalizadas</p>
         </div>
-        <div>
-            <label for="celular">Celular:</label>
-            <input type="tel" id="celular" name="celular" />
+        
+        <div onclick="onSelectProduct(this)">
+            <img src="./assets/photos/cone.jpeg" alt="Cone" class="imagens">
+            <p>Cone para enfeitar festas</p>
         </div>
-        <div>
-            <label for="caixasPersonalizadas">Caixas Personalizadas:</label>
-            <input type="checkbox" id="caixasPersonalizadas" name="caixasPersonalizadas" />
+
+        <div onclick="onSelectProduct(this)">
+            <img src="./assets/photos/convite.jpeg" alt="Convite" class="imagens">
+            <p>Convites</p>
         </div>
-        <div>
-            <label for="etiquetasEscolares">Etiquetas Escolares:</label>
-            <input type="checkbox" id="etiquetasEscolares" name="etiquetasEscolares" />
+
+        <div onclick="onSelectProduct(this)">
+            <img src="./assets/photos/kit.jpeg" alt="Kit" class="imagens">
+            <p>Kit Lembrancinhas</p>
         </div>
-        <div>
-            <label for="topodeBolo">Topo de Bolo:</label>
-            <input type="checkbox" id="topodeBolo" name="topodeBolo" />
+
+        <div onclick="onSelectProduct(this)">
+            <img src="./assets/photos/cartao.jpeg" alt="Cartão" class="imagens">
+            <p>Cartão de Visitas</p>
         </div>
-        <div>
-            <label for="tubetes">Tubetes Personalizados:</label>
-            <input type="checkbox" id="tubetes" name="tubetes" />
+
+        <div onclick="onSelectProduct(this)">
+            <img src="./assets/photos/tubete.jpeg" alt="Tubetes" class="imagens">
+            <p>Caixinha Personalizadas</p>
         </div>
-        <div>
-            <label for="msg">Mensagem:</label>
-            <textarea id="msg" name="msg"></textarea>
-        </div>
-        <div class="button">
-            <button>Enviar sua mensagem</button>
-        </div>
-    </form>
+    </section>
 
     <script src="./scritpt.js"></script>
 </body>
-
 </html>
